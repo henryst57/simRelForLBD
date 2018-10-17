@@ -1,0 +1,18 @@
+Requirements:
+	UMLS::Association v1.7 or higher
+
+#################################################################
+#                Steps to Perform Evaluation
+#################################################################
+
+1) compute association scores for cui pair files
+	run getAssociationScores.pl
+
+2) compute vector cosine scores for each cui pair file
+	run getCosineForVectorPairFile.pl
+
+3) compute spearmans using spearmans.pl for all measures against their gold scorse
+	run getSpearmansCorrelations.pl
+
+
+
